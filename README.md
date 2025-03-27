@@ -8,7 +8,9 @@ A stylish and interactive **circular navigation menu** built using **HTML, CSS, 
 - 🎮 **Game** – Play a fun web-based game.  
 - 📩 **Music** – You can play music by clicking button.  
 - ⚙️ **Wallpaper** – You can choose any Wallpaper and download it.  
-- 🔗 **Linkedin** – Connect with me on Linkedin.  
+- 🔗 **Linkedin** – Connect with me on Linkedin.
+
+### All these features are my individual projects. You can find these on my repositories. By clicking button you can see them live and use it. Thta's all.
 
 ## Demo  
 ![Circular Nav Menu](demo.png)  
