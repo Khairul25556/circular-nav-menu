@@ -11,7 +11,7 @@ A stylish and interactive **circular navigation menu** built using **HTML, CSS, 
 - 🔗 **Linkedin** – Connect with me on Linkedin.  
 
 ## Demo  
-![Circular Nav Menu](demo)  
+![Circular Nav Menu](demo.png)  
 
 ## Technologies Used  
 - **HTML** – Structure of the menu  
