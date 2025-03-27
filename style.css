@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #8460ed, #ff1252);
+}
+
+.container{
+    width: 270px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.toggle{
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    border-radius: 50%;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 20;
+    transition: 0.3s;
+}
+
+.container.active .toggle{
+    transform: rotate(45deg);
+}
+
+.container .menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.menu li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transform: rotate(calc(360deg / 6 * var(--i)));
+}
+
+.menu li a{
+    width: 55px;
+    height: 55px;
+    color: #222;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: visible;
+    transition: 0.3s;
+}
+
+.container.active .menu li a{
+    top: 0;
+    transform: translate(-50%, -50%) rotate(calc(-360deg /6 * var(--i)));
+}
